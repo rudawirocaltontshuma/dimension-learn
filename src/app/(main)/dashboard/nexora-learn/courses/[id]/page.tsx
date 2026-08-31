@@ -118,7 +118,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                   <TableBody>
                     {courseStudents.map((student) => (
                       <TableRow key={student.id}>
-                        <TableCell className="text-sm font-medium">{student.name}</TableCell>
+                        <TableCell className="font-medium text-sm">{student.name}</TableCell>
                         <TableCell className="text-sm">{student.program}</TableCell>
                         <TableCell className="text-sm tabular-nums">{student.averageGrade}%</TableCell>
                         <TableCell>
@@ -153,7 +153,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                   <TableBody>
                     {courseAssignments.map((assignment) => (
                       <TableRow key={assignment.id}>
-                        <TableCell className="text-sm font-medium">{assignment.title}</TableCell>
+                        <TableCell className="font-medium text-sm">{assignment.title}</TableCell>
                         <TableCell className="text-sm">{assignment.dueDate}</TableCell>
                         <TableCell className="text-sm tabular-nums">
                           {assignment.submissions}/{assignment.totalStudents}
@@ -191,7 +191,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                   <TableBody>
                     {courseAssessments.map((assessment) => (
                       <TableRow key={assessment.id}>
-                        <TableCell className="text-sm font-medium">{assessment.title}</TableCell>
+                        <TableCell className="font-medium text-sm">{assessment.title}</TableCell>
                         <TableCell className="text-sm">{assessment.date}</TableCell>
                         <TableCell className="text-sm tabular-nums">{assessment.students}</TableCell>
                         <TableCell className="text-sm tabular-nums">{assessment.averageScore || "—"}%</TableCell>

@@ -23,7 +23,7 @@ export function ClassesTable({ classes }: { classes: ClassSection[] }) {
         <TableBody>
           {classes.map((cls) => (
             <TableRow key={cls.id}>
-              <TableCell className="text-sm font-medium">{cls.name}</TableCell>
+              <TableCell className="font-medium text-sm">{cls.name}</TableCell>
               <TableCell className="text-sm">{cls.courseTitle}</TableCell>
               <TableCell className="text-sm">{cls.teacherName}</TableCell>
               <TableCell className="text-sm tabular-nums">{cls.students}</TableCell>

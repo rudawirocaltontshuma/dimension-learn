@@ -80,7 +80,7 @@ export function AnalyticsTabs() {
               <CardTitle className="text-sm">Students by Department</CardTitle>
             </CardHeader>
             <CardContent>
-              <ChartContainer config={distributionConfig} className="mx-auto h-64 aspect-square">
+              <ChartContainer config={distributionConfig} className="mx-auto aspect-square h-64">
                 <PieChart>
                   <ChartTooltip content={<ChartTooltipContent hideLabel />} />
                   <Pie data={departmentDistribution} dataKey="value" nameKey="department" innerRadius={50}>

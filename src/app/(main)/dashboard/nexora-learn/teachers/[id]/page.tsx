@@ -91,7 +91,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                 <TableBody>
                   {teacherCourses.map((course) => (
                     <TableRow key={course.id}>
-                      <TableCell className="text-sm font-medium">{course.title}</TableCell>
+                      <TableCell className="font-medium text-sm">{course.title}</TableCell>
                       <TableCell className="text-muted-foreground text-sm">{course.code}</TableCell>
                       <TableCell className="text-sm tabular-nums">{course.students}</TableCell>
                       <TableCell className="text-sm tabular-nums">{course.completion}%</TableCell>
@@ -127,7 +127,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
               <TableBody>
                 {teacherClasses.map((cls) => (
                   <TableRow key={cls.id}>
-                    <TableCell className="text-sm font-medium">{cls.name}</TableCell>
+                    <TableCell className="font-medium text-sm">{cls.name}</TableCell>
                     <TableCell className="text-sm">{cls.courseTitle}</TableCell>
                     <TableCell className="text-sm tabular-nums">{cls.students}</TableCell>
                     <TableCell className="text-sm">{cls.schedule}</TableCell>

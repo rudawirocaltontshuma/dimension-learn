@@ -23,7 +23,7 @@ export function AssignmentsTable({ assignments }: { assignments: Assignment[] })
         <TableBody>
           {assignments.map((assignment) => (
             <TableRow key={assignment.id}>
-              <TableCell className="text-sm font-medium">{assignment.title}</TableCell>
+              <TableCell className="font-medium text-sm">{assignment.title}</TableCell>
               <TableCell className="text-sm">{assignment.courseTitle}</TableCell>
               <TableCell className="text-sm">{assignment.teacherName}</TableCell>
               <TableCell className="text-sm">{assignment.dueDate}</TableCell>

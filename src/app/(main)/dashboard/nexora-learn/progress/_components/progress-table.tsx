@@ -22,7 +22,7 @@ export function ProgressTable({ students }: { students: Student[] }) {
         <TableBody>
           {students.map((student) => (
             <TableRow key={student.id}>
-              <TableCell className="text-sm font-medium">{student.name}</TableCell>
+              <TableCell className="font-medium text-sm">{student.name}</TableCell>
               <TableCell className="text-sm">{student.enrolledCourses[0]}</TableCell>
               <TableCell>
                 <div className="flex items-center gap-2">

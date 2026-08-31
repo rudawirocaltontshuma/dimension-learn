@@ -26,7 +26,7 @@ export function CertificatesTable({ certificates }: { certificates: Certificate[
         <TableBody>
           {certificates.map((certificate) => (
             <TableRow key={certificate.id}>
-              <TableCell className="text-sm font-medium">{certificate.title}</TableCell>
+              <TableCell className="font-medium text-sm">{certificate.title}</TableCell>
               <TableCell className="text-sm">{certificate.studentName}</TableCell>
               <TableCell className="text-sm">{certificate.courseTitle}</TableCell>
               <TableCell className="text-sm">{certificate.issueDate}</TableCell>

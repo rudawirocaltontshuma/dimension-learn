@@ -73,7 +73,7 @@ export function GradesExplorer({ grades }: { grades: GradeEntry[] }) {
             ) : (
               filtered.map((grade) => (
                 <TableRow key={grade.id}>
-                  <TableCell className="text-sm font-medium">{grade.studentName}</TableCell>
+                  <TableCell className="font-medium text-sm">{grade.studentName}</TableCell>
                   <TableCell className="text-sm">{grade.courseTitle}</TableCell>
                   <TableCell className="text-sm">{grade.assignment}</TableCell>
                   <TableCell className="text-sm">{grade.assessment}</TableCell>

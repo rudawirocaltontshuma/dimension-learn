@@ -202,6 +202,14 @@ function seededName(seed: number) {
   return `${first} ${last}`;
 }
 
+function scoreToLetterGrade(score: number) {
+  if (score >= 90) return "A";
+  if (score >= 80) return "B";
+  if (score >= 70) return "C";
+  if (score >= 60) return "D";
+  return "F";
+}
+
 const statuses: Status[] = ["Active", "Active", "Active", "Inactive", "Pending"];
 
 export const courses: Course[] = [
@@ -523,12 +531,18 @@ export const curriculum: CurriculumCourse[] = courses.slice(0, 6).map((course, c
     title: `Module ${mi + 1}: ${["Foundations", "Core Concepts", "Applied Practice"][mi]}`,
     lessons: Array.from({ length: 3 }, (_, li) => {
       const completion = Math.max(0, 100 - (ci * 5 + mi * 20 + li * 15));
+      let status: Status = "Active";
+      if (completion === 100) {
+        status = "Completed";
+      } else if (completion === 0) {
+        status = "Pending";
+      }
       return {
         id: `${course.id}-mod-${mi + 1}-lesson-${li + 1}`,
         title: `Lesson ${li + 1}: ${["Overview", "Deep Dive", "Workshop"][li]}`,
         duration: `${25 + li * 10} min`,
         completion,
-        status: completion === 100 ? "Completed" : completion === 0 ? "Pending" : "Active",
+        status,
       } satisfies Lesson;
     }),
   })),
@@ -674,7 +688,7 @@ export const assessments: Assessment[] = [
 export const grades: GradeEntry[] = students.slice(0, 18).map((student, i) => {
   const course = courses[i % courses.length];
   const score = 55 + ((i * 9) % 45);
-  const grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : score >= 60 ? "D" : "F";
+  const grade = scoreToLetterGrade(score);
   return {
     id: `grd-${String(i + 1).padStart(3, "0")}`,
     studentName: student.name,

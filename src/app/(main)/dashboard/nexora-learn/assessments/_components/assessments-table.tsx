@@ -22,7 +22,7 @@ export function AssessmentsTable({ assessments }: { assessments: Assessment[] })
         <TableBody>
           {assessments.map((assessment) => (
             <TableRow key={assessment.id}>
-              <TableCell className="text-sm font-medium">{assessment.title}</TableCell>
+              <TableCell className="font-medium text-sm">{assessment.title}</TableCell>
               <TableCell className="text-sm">{assessment.courseTitle}</TableCell>
               <TableCell className="text-sm">{assessment.date}</TableCell>
               <TableCell className="text-sm tabular-nums">{assessment.students}</TableCell>
