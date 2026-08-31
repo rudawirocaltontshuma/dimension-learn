@@ -51,7 +51,7 @@ export function SettingsTabs() {
               </div>
               <div className="grid gap-2">
                 <Label htmlFor={emailId}>Email</Label>
-                <Input id={emailId} type="email" defaultValue="admin@nexoralearn.edu" />
+                <Input id={emailId} type="email" defaultValue="admin@dimensionlearn.edu" />
               </div>
               <div className="grid gap-2 sm:col-span-2">
                 <Label htmlFor={titleId}>Title</Label>
