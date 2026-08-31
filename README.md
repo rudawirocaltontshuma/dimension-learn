@@ -80,6 +80,30 @@ Most admin templates I found, free or paid, felt cluttered, outdated, or too rig
 - Calendar Page  
 - Authentication (4 screens)  
 - Legacy: Default v1, CRM v1, Finance v1, Analytics v1
+- **Dimension Learn** — Education & Learning Management Platform (see below)
+
+### Dimension Learn
+
+A frontend-only Education & Learning Management Platform demo, built with mock data on top of the Studio Admin shell. No backend, database, authentication, or external services — everything runs on local/session state. Available under `/dashboard/dimension-learn`:
+
+- Dashboard (KPIs and enrollment/attendance/grade charts)
+- Students (directory + profile detail)
+- Teachers (directory + profile detail)
+- Courses (directory + tabbed course detail)
+- Classes
+- Curriculum (module/lesson builder)
+- Assignments
+- Assessments
+- Grades
+- Attendance
+- Calendar
+- Learning Progress
+- Certificates
+- Announcements
+- Resources
+- Reports
+- Analytics
+- Settings
 
 ### Planned
 I’ve added all the planned screens. Feel free to open an issue for requesting something specific.

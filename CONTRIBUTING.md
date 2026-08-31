@@ -18,20 +18,26 @@ We use a **colocation-based file system**. Each feature keeps its own pages, com
 
 ```
 src
-├── app               # Next.js routes (App Router)
-│   ├── (auth)        # Auth layouts & screens
-│   ├── (main)        # Main dashboard routes
-│   │   └── (dashboard)
+├── app                    # Next.js routes (App Router)
+│   ├── (external)         # Landing / non-dashboard routes
+│   ├── (main)
+│   │   ├── auth           # Auth layouts & screens
+│   │   └── dashboard
 │   │       ├── crm
 │   │       ├── finance
 │   │       ├── default
+│   │       ├── dimension-learn   # Education & Learning Management screens
+│   │       │   ├── students
+│   │       │   ├── teachers
+│   │       │   ├── courses
+│   │       │   └── ...
 │   │       └── ...
 │   └── layout.tsx
-├── components        # Shared UI components
-├── hooks             # Reusable hooks
-├── lib               # Config & utilities
-├── styles            # Tailwind / theme setup
-└── types             # TypeScript definitions
+├── components             # Shared UI components
+├── hooks                  # Reusable hooks
+├── lib                    # Config & utilities
+├── navigation             # Sidebar nav config
+└── styles                 # Tailwind / theme setup
 ```
 
 If you’d like a more detailed example of this setup, check out the [Next Colocation Template](https://github.com/arhamkhnz/next-colocation-template), where the full structure is explained with examples.
