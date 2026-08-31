@@ -28,7 +28,7 @@ export function TeachersTable({ teachers }: { teachers: Teacher[] }) {
             <TableRow key={teacher.id}>
               <TableCell>
                 <Link
-                  href={`/dashboard/nexora-learn/teachers/${teacher.id}`}
+                  href={`/dashboard/dimension-learn/teachers/${teacher.id}`}
                   className="flex items-center gap-2.5 font-medium hover:underline"
                 >
                   <Avatar size="sm">

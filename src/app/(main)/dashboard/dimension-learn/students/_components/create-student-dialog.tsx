@@ -60,7 +60,7 @@ export function CreateStudentDialog() {
             </div>
             <div className="grid gap-2">
               <Label htmlFor={emailId}>Email</Label>
-              <Input id={emailId} name="email" type="email" placeholder="student@nexoralearn.edu" required />
+              <Input id={emailId} name="email" type="email" placeholder="student@dimensionlearn.edu" required />
             </div>
             <div className="grid gap-2">
               <Label htmlFor="program">Program</Label>

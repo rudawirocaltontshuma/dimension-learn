@@ -1,4 +1,4 @@
-// Shared mock data source for the Nexora Learn module.
+// Shared mock data source for the Dimension Learn module.
 // Every subroute should import from here instead of forking its own data.
 
 export type Status = "Active" | "Inactive" | "Pending" | "Completed" | "Archived" | "On Leave";
@@ -340,7 +340,7 @@ export const teachers: Teacher[] = [
     id: "tch-01",
     name: "Dr. Amara Okafor",
     avatar: initials("Amara Okafor"),
-    email: "amara.okafor@nexoralearn.edu",
+    email: "amara.okafor@dimensionlearn.edu",
     department: "Computer Science",
     courses: 2,
     students: 150,
@@ -352,7 +352,7 @@ export const teachers: Teacher[] = [
     id: "tch-02",
     name: "Prof. Liam Chen",
     avatar: initials("Liam Chen"),
-    email: "liam.chen@nexoralearn.edu",
+    email: "liam.chen@dimensionlearn.edu",
     department: "Business",
     courses: 2,
     students: 150,
@@ -364,7 +364,7 @@ export const teachers: Teacher[] = [
     id: "tch-03",
     name: "Ms. Sofia Martinez",
     avatar: initials("Sofia Martinez"),
-    email: "sofia.martinez@nexoralearn.edu",
+    email: "sofia.martinez@dimensionlearn.edu",
     department: "Fine Arts",
     courses: 2,
     students: 62,
@@ -376,7 +376,7 @@ export const teachers: Teacher[] = [
     id: "tch-04",
     name: "Dr. Noah Kim",
     avatar: initials("Noah Kim"),
-    email: "noah.kim@nexoralearn.edu",
+    email: "noah.kim@dimensionlearn.edu",
     department: "Mechanical Engineering",
     courses: 2,
     students: 86,
@@ -388,7 +388,7 @@ export const teachers: Teacher[] = [
     id: "tch-05",
     name: "Dr. Isabella Patel",
     avatar: initials("Isabella Patel"),
-    email: "isabella.patel@nexoralearn.edu",
+    email: "isabella.patel@dimensionlearn.edu",
     department: "Biology",
     courses: 2,
     students: 123,
@@ -400,7 +400,7 @@ export const teachers: Teacher[] = [
     id: "tch-06",
     name: "Mr. Ethan Nguyen",
     avatar: initials("Ethan Nguyen"),
-    email: "ethan.nguyen@nexoralearn.edu",
+    email: "ethan.nguyen@dimensionlearn.edu",
     department: "Computer Science",
     courses: 1,
     students: 40,
@@ -421,7 +421,7 @@ export const students: Student[] = Array.from({ length: 24 }, (_, i) => {
     id: `stu-${String(i + 1).padStart(3, "0")}`,
     name,
     avatar: initials(name),
-    email: `${name.toLowerCase().replace(" ", ".")}@nexoralearn.edu`,
+    email: `${name.toLowerCase().replace(" ", ".")}@dimensionlearn.edu`,
     program,
     className: `${program.split(" ")[0]}-${100 + (i % 4) * 10}`,
     attendance,

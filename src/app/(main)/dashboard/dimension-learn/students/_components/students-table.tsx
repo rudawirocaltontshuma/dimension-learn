@@ -30,7 +30,7 @@ export function StudentsTable({ students }: { students: Student[] }) {
             <TableRow key={student.id}>
               <TableCell>
                 <Link
-                  href={`/dashboard/nexora-learn/students/${student.id}`}
+                  href={`/dashboard/dimension-learn/students/${student.id}`}
                   className="flex items-center gap-2.5 font-medium hover:underline"
                 >
                   <Avatar size="sm">

@@ -13,18 +13,18 @@ export default function Page() {
   return (
     <div className="flex flex-col gap-4">
       <PageHeader
-        title="Nexora Learn"
+        title="Dimension Learn"
         description="A unified view of students, teachers, courses, and academic performance."
         actions={
           <>
             <Button asChild size="sm">
-              <Link href="/dashboard/nexora-learn/announcements">
+              <Link href="/dashboard/dimension-learn/announcements">
                 <Megaphone />
                 New Announcement
               </Link>
             </Button>
             <Button asChild size="sm" variant="outline">
-              <Link href="/dashboard/nexora-learn/grades">
+              <Link href="/dashboard/dimension-learn/grades">
                 <GraduationCap />
                 Gradebook
               </Link>

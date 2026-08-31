@@ -27,7 +27,7 @@ export function OverviewCharts() {
           <ChartContainer config={enrollmentConfig} className="h-64 w-full">
             <AreaChart data={monthlyEnrollment} margin={{ left: 0, right: 8, top: 8, bottom: 0 }}>
               <defs>
-                <linearGradient id="nexora-enrollment-fill" x1="0" y1="0" x2="0" y2="1">
+                <linearGradient id="dimension-enrollment-fill" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="5%" stopColor="var(--color-students)" stopOpacity={0.35} />
                   <stop offset="95%" stopColor="var(--color-students)" stopOpacity={0.02} />
                 </linearGradient>
@@ -39,7 +39,7 @@ export function OverviewCharts() {
                 type="monotone"
                 dataKey="students"
                 stroke="var(--color-students)"
-                fill="url(#nexora-enrollment-fill)"
+                fill="url(#dimension-enrollment-fill)"
                 strokeWidth={2}
               />
             </AreaChart>

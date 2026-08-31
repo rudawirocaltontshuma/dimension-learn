@@ -28,7 +28,7 @@ export function CoursesTable({ courses }: { courses: Course[] }) {
             <TableRow key={course.id}>
               <TableCell>
                 <Link
-                  href={`/dashboard/nexora-learn/courses/${course.id}`}
+                  href={`/dashboard/dimension-learn/courses/${course.id}`}
                   className="font-medium text-sm hover:underline"
                 >
                   {course.title}
