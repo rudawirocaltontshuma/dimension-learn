@@ -7,7 +7,7 @@ This guide will help you set up your environment and understand how to contribut
 
 ## Overview
 
-This project is built with **Next.js 16**, **TypeScript**, **Tailwind CSS v4**, and **Shadcn UI**, on top of the [Studio Admin](https://github.com/arhamkhnz/next-shadcn-admin-dashboard) admin shell.
+This project is built with **Next.js 16**, **TypeScript**, **Tailwind CSS v4**, and **Shadcn UI**.
 The goal is to keep the codebase modular, scalable, and easy to extend.
 
 ---
@@ -35,8 +35,6 @@ src
 ├── navigation             # Sidebar nav config
 └── styles                 # Tailwind / theme setup
 ```
-
-If you’d like a more detailed example of this setup, check out the [Next Colocation Template](https://github.com/arhamkhnz/next-colocation-template), where the full structure is explained with examples.
 
 ---
 
@@ -95,9 +93,9 @@ If you’d like a more detailed example of this setup, check out the [Next Coloc
 
 ## Guidelines
 
-- This is a frontend-only demo — no backend, database, authentication, or external services. Keep new work to mock data and local/session state.
+- This is a frontend-only application — no backend, database, authentication, or external services. Keep new work to mock data and local/session state.
 - Prefer **TypeScript types** over `any`
-- Husky pre-commit hooks are enabled - linting and formatting run automatically when you commit, and if there are errors the commit will be blocked until they are fixed. 
+- Husky pre-commit hooks are enabled — linting and formatting run automatically when you commit, and if there are errors the commit will be blocked until they are fixed.
 - Follow **Shadcn UI** style & Tailwind v4 conventions
 - Keep accessibility in mind (ARIA, keyboard nav)
 - Use clear commit messages with conventional prefixes (`feat:`, `fix:`, `chore:`, etc.)
@@ -108,8 +106,8 @@ If you’d like a more detailed example of this setup, check out the [Next Coloc
 
 ## Submitting PRs
 
-- Open a Pull Request once your changes are ready.  
-- Ensure your branch is up to date with `main` before submitting.  
+- Open a Pull Request once your changes are ready.
+- Ensure your branch is up to date with `main` before submitting.
 - Reference any related issue in your PR for context.
 
 ---
