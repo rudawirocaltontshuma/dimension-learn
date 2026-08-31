@@ -1,13 +1,13 @@
-# Contributing to Studio Admin
+# Contributing to Dimension Learn
 
-Thanks for showing interest in improving **Studio Admin** (repo: `next-shadcn-admin-dashboard`).  
+Thanks for showing interest in improving **Dimension Learn**.
 This guide will help you set up your environment and understand how to contribute.
 
 ---
 
 ## Overview
 
-This project is built with **Next.js 16**, **TypeScript**, **Tailwind CSS v4**, and **Shadcn UI**.  
+This project is built with **Next.js 16**, **TypeScript**, **Tailwind CSS v4**, and **Shadcn UI**, on top of the [Studio Admin](https://github.com/arhamkhnz/next-shadcn-admin-dashboard) admin shell.
 The goal is to keep the codebase modular, scalable, and easy to extend.
 
 ---
@@ -21,17 +21,13 @@ src
 ├── app                    # Next.js routes (App Router)
 │   ├── (external)         # Landing / non-dashboard routes
 │   ├── (main)
-│   │   ├── auth           # Auth layouts & screens
+│   │   ├── unauthorized
 │   │   └── dashboard
-│   │       ├── crm
-│   │       ├── finance
-│   │       ├── default
-│   │       ├── dimension-learn   # Education & Learning Management screens
-│   │       │   ├── students
-│   │       │   ├── teachers
-│   │       │   ├── courses
-│   │       │   └── ...
-│   │       └── ...
+│   │       └── dimension-learn   # Education & Learning Management screens
+│   │           ├── students
+│   │           ├── teachers
+│   │           ├── courses
+│   │           └── ...
 │   └── layout.tsx
 ├── components             # Shared UI components
 ├── hooks                  # Reusable hooks
@@ -46,28 +42,22 @@ If you’d like a more detailed example of this setup, check out the [Next Coloc
 
 ## Getting Started
 
-### Fork and Clone the Repository
-
-1. Fork the Repository
-   
-   Click [here](https://github.com/arhamkhnz/next-shadcn-admin-dashboard/fork) to fork the repository.
-
-2. Clone the Repository  
+1. Clone the repository
    ```bash
-   git clone https://github.com/YOUR_USERNAME/next-shadcn-admin-dashboard.git
-   ```
-   
-3. Navigate into the Project  
-   ```bash
-   cd next-shadcn-admin-dashboard
+   git clone https://github.com/rudawirocaltontshuma/education_learning_management.git
    ```
 
-4. **Install dependencies**
+2. Navigate into the project
+   ```bash
+   cd education_learning_management
+   ```
+
+3. **Install dependencies**
    ```bash
    npm install
    ```
 
-5. **Run the dev server**
+4. **Run the dev server**
    ```bash
    npm run dev
    ```
@@ -84,7 +74,7 @@ If you’d like a more detailed example of this setup, check out the [Next Coloc
 
 - Use clear commit messages:
   ```bash
-  git commit -m "feat: add finance dashboard screen"
+  git commit -m "feat: add grade distribution chart"
   ```
 
 - Open a Pull Request once ready.
@@ -94,23 +84,25 @@ If you’d like a more detailed example of this setup, check out the [Next Coloc
 
 ## Where to Contribute
 
-- **External Pages**: Landing pages or other non-dashboard routes → `src/app/(external)/`  
-- **Auth Screens**: Login, register, and authentication layouts → `src/app/(main)/auth/`  
-- **Dashboard Screens**: Feature dashboards like CRM, Finance, Analytics → `src/app/(main)/dashboard/`
-- **Components**: Reusable UI goes in `src/components/`  
-- **Hooks**: Custom logic goes in `src/hooks/`  
-- **Themes**: New presets under `src/styles/presets/`  
+- **Dimension Learn screens**: `src/app/(main)/dashboard/dimension-learn/`
+- **Shared mock data**: `src/app/(main)/dashboard/dimension-learn/_data/`
+- **Components**: Reusable UI goes in `src/components/`
+- **Hooks**: Custom logic goes in `src/hooks/`
+- **Themes**: New presets under `src/styles/presets/`
+- **Sidebar navigation**: `src/navigation/sidebar/sidebar-items.ts`
 
 ---
 
 ## Guidelines
 
+- This is a frontend-only demo — no backend, database, authentication, or external services. Keep new work to mock data and local/session state.
 - Prefer **TypeScript types** over `any`
 - Husky pre-commit hooks are enabled - linting and formatting run automatically when you commit, and if there are errors the commit will be blocked until they are fixed. 
 - Follow **Shadcn UI** style & Tailwind v4 conventions
 - Keep accessibility in mind (ARIA, keyboard nav)
 - Use clear commit messages with conventional prefixes (`feat:`, `fix:`, `chore:`, etc.)
 - Avoid unnecessary dependencies — prefer existing utilities where possible
+- Do not modify files inside `src/components/ui/` or `src/components/calendar/` — apply styling or customization where they are used instead
 
 ---
 
@@ -124,10 +116,4 @@ If you’d like a more detailed example of this setup, check out the [Next Coloc
 
 ## Questions & Support
 
-- Report bugs, suggestions, or issues via [GitHub Issues](https://github.com/arhamkhnz/next-shadcn-admin-dashboard/issues)
-
----
-
-Your contributions keep this project growing. 🚀
-
-**Happy Vibe Coding!**
+- Report bugs, suggestions, or issues via [GitHub Issues](https://github.com/rudawirocaltontshuma/education_learning_management/issues)
